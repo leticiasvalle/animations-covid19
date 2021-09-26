@@ -1,21 +1,32 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import Dia1509 from './features/Dia1509';
+import Dia1609 from './features/Dia1609';
+import Legenda from './features/Legenda';
+import Cuidese from './features/Cuidese';
+import Covid from './features/Covid';
 
-export default function App() {
+const App = () => {
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Covid/>
+      <Dia1509/>
+      <Dia1609/>
+      <Legenda/>
+      <Cuidese/>
     </View>
   );
 }
+export default App;
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
+    backgroundColor: '#F6F2EE',
     justifyContent: 'center',
-  },
+    alignItems: 'center',
+    margin: 2,
+    marginTop: 8,
+  },  
 });
